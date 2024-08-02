@@ -1,0 +1,32 @@
+﻿@model Formacion.Azure.AppService.WebJobs.WebUploadFiles.Controllers.WebJobsController
+
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+        <h2>Web Jobs</h2>
+        <h3>Carga de Ficheros - Almacenamiento Local (App Service)</h3>
+        <hr />
+        <form method="post" enctype="multipart/form-data" action="/webjobs/uploadfile">
+            <input asp-for="UploadFileContent" type="file" />
+            <br /><br />
+            <input type="submit" class="btn btn-success" value="Upload" />
+        </form>
+    </div>
+    <div class="col-1"></div>
+</div>
+<br />
+<br />
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+        <h2>Web Jobs</h2>
+        <h3>Carga de Ficheros - Almacenamiento StorageAccount</h3>
+        <hr />
+        <form method="post" enctype="multipart/form-data" action="/webjobs/uploadfile2">
+            <input asp-for="UploadFileContent" type="file" />
+            <br /><br />
+            <input type="submit" class="btn btn-success" value="Upload" />
+        </form>
+    </div>
+    <div class="col-1"></div>
+</div>
